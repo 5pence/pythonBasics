@@ -128,3 +128,28 @@ except ZeroDivisionError:
 print(sqrt(16)) # 4.0
 print(pi)
 print(sin(pi/2))
+
+
+def add(a, b):
+    """ this returns the sum of a and b """
+    answer = a + b
+    print("hey im in the add method!")
+    return answer
+
+
+def subtract(a, b):
+    """ this returns the subtraction of a and b """
+    return a - b
+
+
+print("hey")
+print(add(2, 3))
+
+for i in range(123):
+    one = (add(i + sin(pi/(i+1)), sqrt((i+2)/3)))
+    print(one)
+    two = (subtract(one, i))
+    print(two)
+    if one ** two > 9000:
+        print(f"It's over 9000! It is {one ** two}")
+
